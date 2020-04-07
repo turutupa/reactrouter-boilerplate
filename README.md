@@ -6,7 +6,7 @@ Remember to uncomment these 2 lines in .gitignore if you are going to upload you
 `default-env.json`
 
 # reactrouter-boilerplate
-_Approuter + Node backend microservice + React.js_
+_Approuter + Node.js backend microservice + React.js_
 
 _Hana DB to come.._
 
