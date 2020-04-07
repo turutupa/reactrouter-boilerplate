@@ -18,4 +18,11 @@ During deployment the xsuaa resource will automatically generate and bound to yo
 
 # Local development 
 
-to be done.
+Add your xsuaa generated credentials in the required files (search for default-services.json in each folder). To check your xsuaa credentials without going into the platform simply run `cf env [name of your app]` the name of each app respectively by default is reactrouter-approuter , reactrouter-frontend, reactrouter-backend, reactrouter-reacteroids
+
+When you run your react app locally the first time you won't be authenticated. You need to open the approuter (localhost:5000) which will open a login page. After you log in you may normally develop your react app in localhost:3000 (by default). You should know it is working because if you check the console in the react app, there are 2 api calls to the backend. 
+
+1. isItWorking: true
+2. currentUser: [your name, email... whatever is in your jwt token]
+
+If you don't see this but instead some weird markdown response it means you haven't logged in yet.
