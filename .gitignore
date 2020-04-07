@@ -1,0 +1,8 @@
+node_modules/
+
+# compiled app - we don't need to save this
+mta_archives/
+
+# these files contain private information about your app
+default-services.json
+default-env.json

@@ -1,0 +1,42 @@
+{
+  "welcomeFile": "/client/",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "/client/(.*)$",
+      "target": "$1",
+      "destination": "frontend",
+      "csrfProtection": false,
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "/reacteroids/(.*)$",
+      "target": "$1",
+      "destination": "reacteroids",
+      "csrfProtection": false,
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "/backend/(.*)$",
+      "target": "$1",
+      "destination": "backend",
+      "csrfProtection": false,
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "(.*)(.xsjs)",
+      "destination": "backend",
+      "csrfProtection": false,
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "(.*)(.xsodata)",
+      "destination": "backend",
+      "authenticationType": "xsuaa"
+    }
+  ],
+  "logout": {
+    "logoutEndpoint": "/logout",
+    "logoutPage": "/"
+  }
+}

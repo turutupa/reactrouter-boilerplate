@@ -1,0 +1,43 @@
+---
+applications:
+  - name: reactrouter-approuter
+    host: reactrouter-approuter
+    path: approuter
+    buildpack: nodejs_buildpack
+    memory: 256M
+    services:
+      - reactrouter-uaa
+    env:
+      destinations: >
+        [
+          {"name": "reacteroids",
+           "url": "https://reactrouter-reacteroids.cfapps.eu10.hana.ondemand.com",
+           "forwardAuthToken": true},
+           {"name": "backend",
+            "url": "https://reactrouter-backend.cfapps.eu10.hana.ondemand.com",
+            "forwardAuthToken": true},
+            {"name": "frontend",
+            "url":"https://reactrouter-frontend.cfapps.eu10.hana.ondemand.com",
+            "forwardAuthToken": true}
+        ]
+  - name: reactrouter-reacteroids
+    host: reactrouter-reacteroids
+    path: reacteroids/dist
+    buildpack: staticfile_buildpack
+    memory: 64M
+    services:
+      - reactrouter-uaa
+  - name: reactrouter-frontend
+    host: reactrouter-frontend
+    path: client/build
+    buildpack: staticfile_buildpack
+    memory: 64M
+    services:
+      - reactrouter-uaa
+  # - name: reactrouter-backend
+  #   host: reactrouter-backend
+  #   path: backend
+  #   buildpack: nodejs_buildpack
+  #   memory: 256M
+  #   services:
+  #     - reactrouter-uaa
