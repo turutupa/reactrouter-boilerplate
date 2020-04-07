@@ -26,3 +26,6 @@ When you run your react app locally the first time you won't be authenticated. Y
 2. currentUser: [your name, email... whatever is in your jwt token]
 
 If you don't see this but instead some weird markdown response it means you haven't logged in yet.
+
+# May I use a different frontend framework?
+Of course you can. Just remember to adjust the path of the frontend app in the mta.yaml to point to your app properly - also remember that this path has to point to the static built file your framework compiles. 
