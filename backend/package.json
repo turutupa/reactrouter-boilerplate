@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@sap/hdbext": "^6.2.0",
     "@sap/xsenv": "^2.2.0",
     "@sap/xsjs": "^5.3.1",
     "@sap/xssec": "^2.2.5",
