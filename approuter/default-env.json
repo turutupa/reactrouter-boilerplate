@@ -1,0 +1,23 @@
+{
+  "destinations": [
+    {
+      "name": "reacteroids",
+      "url": "http://localhost:3001",
+      "forwardAuthToken": true
+    },
+    {
+      // you don't really need this destination as you are
+      // already going to be working with React default live
+      // updates - but you can add the url to your deployed
+      // frontend just to make sure it is working
+      "name": "frontend",
+      // "url": "",
+      "forwardAuthToken": true
+    },
+    {
+      "name": "backend",
+      "url": "http://localhost:4000",
+      "forwardAuthToken": true
+    }
+  ]
+}

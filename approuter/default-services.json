@@ -1,0 +1,5 @@
+// you can check your envs using
+// cf env [name of the app]
+{
+  "uaa": // copy paste your xs-uaa credentials here (the entire object)
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run dev --prefix ./approuter\" \"npm start --prefix ./client\" \"npm run dev --prefix ./db\" \"npm run dev --prefix ./backend\"",
+    "dev": "concurrently \"npm run dev --prefix ./approuter\" \"npm start --prefix ./client\" \"npm run dev --prefix ./reacteroids\" \"npm run dev --prefix ./backend\"",
     "build": "npm run build --prefix ./client"
   },
   "repository": {
