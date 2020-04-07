@@ -6,3 +6,5 @@ mta_archives/
 # these files contain private information about your app
 default-services.json
 default-env.json
+
+*.mta
