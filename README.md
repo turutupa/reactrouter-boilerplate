@@ -1,13 +1,13 @@
 # reactrouter-boilerplate
 
+## Reminder!!!
+```
 Remember to uncomment these 2 lines in .gitignore if you are going to upload your code to a public github repository
-
-
+```
 default-services.json
-
 default-env.json
 
-# Deployment
+## Deployment
 1. To use a first deployment is required. To do so you will need the official mbt tool to compile the app.
 Download and install: https://sap.github.io/cloud-mta-build-tool/usage/
 
@@ -16,7 +16,7 @@ Download and install: https://sap.github.io/cloud-mta-build-tool/usage/
 
 During deployment the xsuaa resource will automatically generate and bound to your apps. These may take a few minutes [it super slooooooow]
 
-# Local development 
+## Local development 
 
 Add your xsuaa generated credentials in the required files (search for default-services.json in each folder). To check your xsuaa credentials without going into the platform simply run `cf env [name of your app]` the name of each app respectively by default is reactrouter-approuter , reactrouter-frontend, reactrouter-backend, reactrouter-reacteroids
 
@@ -27,5 +27,5 @@ When you run your react app locally the first time you won't be authenticated. Y
 
 If you don't see this but instead some weird markdown response it means you haven't logged in yet.
 
-# May I use a different frontend framework?
+## May I use a different frontend framework?
 Of course you can. Just remember to adjust the path of the frontend app in the mta.yaml to point to your app properly - also remember that this path has to point to the static built file your framework compiles. 
