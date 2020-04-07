@@ -1,5 +1,3 @@
-# reactrouter-boilerplate
-
 ## Reminder!!!
 
 Remember to uncomment these 2 lines in .gitignore if you are going to upload your code to a public github repository
@@ -7,6 +5,9 @@ Remember to uncomment these 2 lines in .gitignore if you are going to upload you
 `default-services.json`
 `default-env.json`
 
+# reactrouter-boilerplate
+_Approuter + Node backend microservice + React.js_
+_Hana DB to come.._
 
 ## Deployment
 1. To use a first deployment is required. To do so you will need the official mbt tool to compile the app.
